@@ -31,6 +31,8 @@ docker-compose run artisan migrate
 
 ## Коллекция Postman: Описание endpoint'ов
 
+#### Все маршруты можно импортировать из файла `postman-collection.json`
+
 ### 1. Аутентификация
 
 #### 1.1 Регистрация пользователя
