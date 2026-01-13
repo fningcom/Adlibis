@@ -16,28 +16,18 @@
 ### 1. Запуск приложения
 
 ```bash
-# Перейти в директорию src
-cd src
+# Запустить контейнеры
+docker-compose up -d
 
 # Установить зависимости
-composer install
-npm install
-
-# Настроить .env файл
-cp .env.example .env
-php artisan key:generate
-
-# Настроить базу данных
-# Убедиться, что параметры подключения в .env правильные
+docker-compose run composer install
 
 # Запустить миграции
-php artisan migrate
+docker-compose run artisan migrate
 
-# Запустить сервер разработки
-php artisan serve
 ```
 
-Сервер будет доступен по адресу `http://localhost:8000`
+Сервер будет доступен по адресу `http://localhost:8080`
 
 ## Коллекция Postman: Описание endpoint'ов
 
